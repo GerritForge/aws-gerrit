@@ -69,6 +69,9 @@ aws cloudformation delete-stack --stack-name gerrit-ecs
  * HTTP on port 8080
  * SSH on port 29418
 * 1 Internet Gateway
+* Route53 DNS entry:
+ * Type A - IPV4 Address Alias
+ * Subdomain defaults to `gerrit-master-demo`
 
 #### Deployment type
 
