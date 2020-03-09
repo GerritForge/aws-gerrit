@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "f8ecc500_28dd2152",
+        "filename": "cf-fargate-networking-stack.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-09T21:26:33Z",
+      "side": 1,
+      "message": "Should this be in a directory dedicated to this single-master configuration?",
+      "revId": "145d9b67d1ad16e28efb746285bad77649f614d0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "2de2ac13_fb8d6fe6",
         "filename": "cf-fargate-networking-stack.yml",
         "patchSetId": 1
