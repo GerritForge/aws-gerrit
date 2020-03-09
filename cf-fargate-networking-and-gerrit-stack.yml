@@ -15,6 +15,13 @@ Parameters:
   SshContainerPort:
     Type: Number
     Default: 29418
+  HostedZoneName:
+    Description: The route53 HostedZoneName.
+    Type: String
+  Subdomain:
+    Description: The subdomain of the Gerrit cluster
+    Type: String
+    Default: ecs
 Mappings:
   # Hard values for the subnet masks. These masks define
   # the range of internal IP addresses that can be assigned.
@@ -311,6 +318,19 @@ Resources:
           - ContainerName: !Ref ServiceName
             ContainerPort: !Ref SshContainerPort
             TargetGroupArn: !Ref TargetGroupSSH
+  DnsRecord:
+    Type: AWS::Route53::RecordSet
+    DependsOn:
+      - PublicLoadBalancer
+    Properties:
+      Name: !Join [ '.', [ !Ref 'Subdomain', !Ref 'HostedZoneName' ] ]
+      HostedZoneName: !Ref 'HostedZoneName'
+      Comment: DNS name for Gerrit.
+      Type: A
+      AliasTarget:
+        DNSName: !GetAtt PublicLoadBalancer.DNSName
+        HostedZoneId: !GetAtt PublicLoadBalancer.CanonicalHostedZoneID
+        EvaluateTargetHealth: False
 Outputs:
   ClusterName:
     Description: The name of the ECS cluster
