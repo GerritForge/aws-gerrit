@@ -15,6 +15,13 @@ Parameters:
   SshContainerPort:
     Type: Number
     Default: 29418
+  HostedZoneName:
+    Description: The route53 HostedZoneName.
+    Type: String
+  Subdomain:
+    Description: The subdomain of the Gerrit cluster
+    Type: String
+    Default: gerrit-master-demo
 Mappings:
   # Hard values for the subnet masks. These masks define
   # the range of internal IP addresses that can be assigned.
@@ -122,6 +129,9 @@ Resources:
       ContainerDefinitions:
         - Name: !Ref ServiceName
           Image: !Ref Image
+          Environment:
+            - Name: "CANONICAL_WEB_URL"
+              Value: !Join [ '', [ 'http://', !Ref 'Subdomain', '.', !Ref 'HostedZoneName' ] ]
           PortMappings:
             - ContainerPort: !Ref HttpContainerPort
             - ContainerPort: !Ref SshContainerPort
@@ -311,17 +321,35 @@ Resources:
           - ContainerName: !Ref ServiceName
             ContainerPort: !Ref SshContainerPort
             TargetGroupArn: !Ref TargetGroupSSH
+  DnsRecord:
+    Type: AWS::Route53::RecordSet
+    DependsOn:
+      - PublicLoadBalancer
+    Properties:
+      Name: !Join [ '.', [ !Ref 'Subdomain', !Ref 'HostedZoneName' ] ]
+      HostedZoneName: !Join [ '', [ !Ref 'HostedZoneName', '.' ] ]
+      Comment: DNS name for Gerrit.
+      Type: A
+      AliasTarget:
+        DNSName: !GetAtt PublicLoadBalancer.DNSName
+        HostedZoneId: !GetAtt PublicLoadBalancer.CanonicalHostedZoneID
+        EvaluateTargetHealth: False
 Outputs:
   ClusterName:
     Description: The name of the ECS cluster
     Value: !Ref 'ECSCluster'
     Export:
       Name: !Join [ ':', [ !Ref 'AWS::StackName', 'ClusterName' ] ]
-  ExternalUrl:
+  LoadBalacerPublicUrl:
     Description: The url of the external load balancer
     Value: !Join ['', ['http://', !GetAtt 'PublicLoadBalancer.DNSName']]
     Export:
-      Name: !Join [ ':', [ !Ref 'AWS::StackName', 'ExternalUrl' ] ]
+      Name: !Join [ ':', [ !Ref 'AWS::StackName', 'LoadBalacerPublicUrl' ] ]
+  GerritMasterUrl:
+    Description: Gerrit master public URLThe url of the external load balancer
+    Value: !Join [ '', [ 'http://', !Ref 'Subdomain', '.', !Ref 'HostedZoneName' ] ]
+    Export:
+      Name: !Join [ ':', [ !Ref 'AWS::StackName', 'GerritMasterUrl' ] ]
   ECSRole:
     Description: The ARN of the ECS role
     Value: !GetAtt 'ECSRole.Arn'
