@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "68d70107_a709ff8b",
+        "filename": "cf-fargate-networking-stack.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 234,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-09T17:44:35Z",
+      "side": 1,
+      "message": "3 should be enough",
+      "range": {
+        "startLine": 233,
+        "startChar": 0,
+        "endLine": 234,
+        "endChar": 31
+      },
+      "revId": "145d9b67d1ad16e28efb746285bad77649f614d0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
