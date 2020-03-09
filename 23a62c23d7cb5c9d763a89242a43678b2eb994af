@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9ca6594d_a2dd8eb3",
+        "filename": "cf-fargate-networking-stack.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-09T19:46:28Z",
+      "side": 1,
+      "message": "Pick a more meaningful default",
+      "range": {
+        "startLine": 24,
+        "startChar": 13,
+        "endLine": 24,
+        "endChar": 16
+      },
+      "revId": "23a62c23d7cb5c9d763a89242a43678b2eb994af",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
