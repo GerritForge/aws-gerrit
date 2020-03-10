@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dd527475_8f63fff3",
+        "filename": "cf-fargate-networking-and-gerrit-stack.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-10T12:30:20Z",
+      "side": 1,
+      "message": "Should pick a better name for the subdomain",
+      "range": {
+        "startLine": 24,
+        "startChar": 13,
+        "endLine": 24,
+        "endChar": 16
+      },
+      "revId": "46cf08110a69939832822756708c5113026be2e9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
