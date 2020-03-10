@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "70c34d38_eb9d533f",
+        "filename": "cf-fargate-networking-stack.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-10T10:51:45Z",
+      "side": 1,
+      "message": "I think it depends what we want to achieve with this repo. Do we want to propose the code to set up Gerrit in ECS with different configuration or we will just aim for a Gerrit multi-master multi-site? I guess we are aiming for a multi-master multi-site configuration.\n\nI have no clear in mind yet how this template will evolve. We will probably have multiple CF templates for the networking, master, slaves, etc. Until we won\u0027t have the necessity to split I would keep a single template in the root directory. WDYT?",
+      "parentUuid": "f8ecc500_28dd2152",
+      "revId": "145d9b67d1ad16e28efb746285bad77649f614d0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "2de2ac13_fb8d6fe6",
         "filename": "cf-fargate-networking-stack.yml",
         "patchSetId": 1
@@ -39,6 +57,30 @@
       "revId": "145d9b67d1ad16e28efb746285bad77649f614d0",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ba0f718d_fd8e5b92",
+        "filename": "cf-fargate-networking-stack.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-10T10:51:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2de2ac13_fb8d6fe6",
+      "range": {
+        "startLine": 112,
+        "startChar": 0,
+        "endLine": 113,
+        "endChar": 149
+      },
+      "revId": "145d9b67d1ad16e28efb746285bad77649f614d0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     },
     {
       "key": {
@@ -65,6 +107,30 @@
     },
     {
       "key": {
+        "uuid": "fdeaa3cc_67c1f651",
+        "filename": "cf-fargate-networking-stack.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 234,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-10T10:51:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "68d70107_a709ff8b",
+      "range": {
+        "startLine": 233,
+        "startChar": 0,
+        "endLine": 234,
+        "endChar": 31
+      },
+      "revId": "145d9b67d1ad16e28efb746285bad77649f614d0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6ccda94f_3dce41d2",
         "filename": "cf-fargate-networking-stack.yml",
         "patchSetId": 1
@@ -85,6 +151,30 @@
       "revId": "145d9b67d1ad16e28efb746285bad77649f614d0",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c203d02f_ed6daac2",
+        "filename": "cf-fargate-networking-stack.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 289,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-10T10:51:45Z",
+      "side": 1,
+      "message": "Since we are using a NLP we can only define TCP checks, hence we cannot define an HTTP endpoint.\n\nIt is not ideal at all, we will have to find a workaround for it. Once we will introduce HAProxy in front of the Gerrit instances probably we will be able to leverage the HTTP healthcheck.",
+      "parentUuid": "6ccda94f_3dce41d2",
+      "range": {
+        "startLine": 289,
+        "startChar": 8,
+        "endLine": 289,
+        "endChar": 37
+      },
+      "revId": "145d9b67d1ad16e28efb746285bad77649f614d0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
