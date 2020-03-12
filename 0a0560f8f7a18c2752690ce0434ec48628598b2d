@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ee20ee6d_f565b745",
+        "filename": "single-master/Makefile",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-12T21:41:54Z",
+      "side": 1,
+      "message": "missing wait-for-service-creation?",
+      "revId": "0a0560f8f7a18c2752690ce0434ec48628598b2d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fdfb7113_c78a4c03",
+        "filename": "single-master/Makefile",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-12T21:41:54Z",
+      "side": 1,
+      "message": "Should this depends on cluster?",
+      "revId": "0a0560f8f7a18c2752690ce0434ec48628598b2d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a9fe8cb7_cd9f2a32",
+        "filename": "single-master/Makefile",
+        "patchSetId": 4
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-12T21:41:54Z",
+      "side": 1,
+      "message": "missing wait-for-cluster-deletion?",
+      "revId": "0a0560f8f7a18c2752690ce0434ec48628598b2d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7ece0c21_67179446",
+        "filename": "single-master/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-12T21:41:54Z",
+      "side": 1,
+      "message": "You may want to explain how to use the Makefile variable CLUSTER_STACK_NAME.",
+      "revId": "0a0560f8f7a18c2752690ce0434ec48628598b2d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
