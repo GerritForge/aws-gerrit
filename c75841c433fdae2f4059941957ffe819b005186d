@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4636f066_eded64a2",
+        "filename": "README.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-12T17:23:00Z",
+      "side": 1,
+      "message": "+ Standalone Gerrit master sandbox without authentication",
+      "revId": "c75841c433fdae2f4059941957ffe819b005186d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c79ba747_e15108f3",
+        "filename": "single-master/README.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-12T17:23:00Z",
+      "side": 1,
+      "message": "missing `--parameters  ParameterKey\u003dClusterStackName,ParameterValue\u003dgerrit-cluster`",
+      "revId": "c75841c433fdae2f4059941957ffe819b005186d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ef8bd629_165882bd",
+        "filename": "single-master/README.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-12T17:23:00Z",
+      "side": 1,
+      "message": "It would be best also to give some examples on how to:\n- wait for the stack to be created\n- list what\u0027s in the stack",
+      "revId": "c75841c433fdae2f4059941957ffe819b005186d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
