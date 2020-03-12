@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ee57f9e3_d26d4004",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 7
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-12T14:29:04Z",
+      "side": 1,
+      "message": "- Enable SSL termination for HTTP\n- Allow custom Gerrit configuration",
+      "revId": "1925cc3ca915d582f7a70585ba8d4f9480382b5b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
