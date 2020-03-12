@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "d32edf13_6c75eb75",
+        "filename": "cf-fargate-networking-stack.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-12T14:18:24Z",
+      "side": 1,
+      "message": "done...added a directory with the single-master templates",
+      "parentUuid": "70c34d38_eb9d533f",
+      "revId": "145d9b67d1ad16e28efb746285bad77649f614d0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2de2ac13_fb8d6fe6",
         "filename": "cf-fargate-networking-stack.yml",
         "patchSetId": 1
