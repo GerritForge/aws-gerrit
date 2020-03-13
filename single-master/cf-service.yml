@@ -28,6 +28,13 @@ Parameters:
         Description: Gerrit SSH port
         Type: Number
         Default: 29418
+  HostedZoneName:
+        Description: The route53 HostedZoneName.
+        Type: String
+  Subdomain:
+        Description: The subdomain of the Gerrit cluster
+        Type: String
+        Default: gerrit-master-demo
 
 Resources:
     Service:
