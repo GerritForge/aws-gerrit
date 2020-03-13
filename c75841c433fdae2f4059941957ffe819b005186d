@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "ddeadbfc_3ba25668",
+        "filename": "README.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-13T08:59:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4636f066_eded64a2",
+      "revId": "c75841c433fdae2f4059941957ffe819b005186d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c79ba747_e15108f3",
         "filename": "single-master/README.md",
         "patchSetId": 8
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "374b87ec_e8069c46",
+        "filename": "single-master/README.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-13T08:59:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c79ba747_e15108f3",
+      "revId": "c75841c433fdae2f4059941957ffe819b005186d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ef8bd629_165882bd",
         "filename": "single-master/README.md",
         "patchSetId": 8
@@ -47,6 +83,24 @@
       "writtenOn": "2020-03-12T17:23:00Z",
       "side": 1,
       "message": "It would be best also to give some examples on how to:\n- wait for the stack to be created\n- list what\u0027s in the stack",
+      "revId": "c75841c433fdae2f4059941957ffe819b005186d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ad323244_18faf92a",
+        "filename": "single-master/README.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-13T08:59:17Z",
+      "side": 1,
+      "message": "I have bundled the creation and deletion of the stack in a follow up change, so it won\u0027t be useful soon. Shall we leave it as it is and address it in the follow up change if anything is missing?",
+      "parentUuid": "ef8bd629_165882bd",
       "revId": "c75841c433fdae2f4059941957ffe819b005186d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
