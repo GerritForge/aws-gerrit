@@ -2,6 +2,8 @@ CLUSTER_STACK_NAME:=gerrit-cluster
 CLUSTER_TEMPLATE:=cf-cluster.yml
 SERVICE_TEMPLATE:=cf-service.yml
 SERVICE_STACK_NAME:=gerrit-service
+HOSTED_ZONE_NAME:=mycompany.com
+SUBDOMAIN:=gerrit-master-demo
 AWS_REGION:=us-east-2
 AWS_FC_COMMAND=export AWS_PAGER=;aws cloudformation
 
@@ -22,8 +24,10 @@ service:
 		--capabilities CAPABILITY_IAM  \
 		--template-body file://`pwd`/$(SERVICE_TEMPLATE) \
 		--region $(AWS_REGION) \
-		--parameters ParameterKey=ClusterStackName,ParameterValue=$(CLUSTER_STACK_NAME)
-
+		--parameters \
+		ParameterKey=ClusterStackName,ParameterValue=$(CLUSTER_STACK_NAME) \
+		ParameterKey=HostedZoneName,ParameterValue=$(HOSTED_ZONE_NAME) \
+		ParameterKey=Subdomain,ParameterValue=$(SUBDOMAIN)
 
 wait-for-cluster-creation:
 	@echo "*** Wait for cluster stack '$(CLUSTER_STACK_NAME)' creation"

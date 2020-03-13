@@ -1,0 +1,25 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: A stack for the Route53 routing for the Gerrit service.
+Parameters:
+  ServiceStackName:
+      Description: Stack name of the ECS Gerrit service
+      Type: String
+      Default: gerrit-service
+
+DnsRecord:
+    Type: AWS::Route53::RecordSet
+    DependsOn:
+      - PublicLoadBalancer
+    Properties:
+      Name: !Join [ '.', [ !Ref 'Subdomain', !Ref 'HostedZoneName' ] ]
+      HostedZoneName: !Join [ '', [ !Ref 'HostedZoneName', '.' ] ]
+      Comment: DNS name for Gerrit Master.
+      Type: A
+      AliasTarget:
+        DNSName:
+          Fn::ImportValue:
+            !Join [':', [!Ref 'ServiceStackName', 'LoadBalancer.DNSName']]
+        HostedZoneId:
+          Fn::ImportValue:
+            !Join [':', [!Ref 'ServiceStackName', 'LoadBalancer.CanonicalHostedZoneID']]
+        EvaluateTargetHealth: False
