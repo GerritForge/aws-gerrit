@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cdf82895_fb6c20e5",
+        "filename": "single-master/Makefile",
+        "patchSetId": 4
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-14T09:50:22Z",
+      "side": 1,
+      "message": "Why all these tabs?",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 4
+      },
+      "revId": "fa09123b37bf6b2416f9747ceb9a440e29f46c65",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "03ff2119_dd6e927f",
+        "filename": "single-master/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-14T09:50:22Z",
+      "side": 1,
+      "message": "Can you specify that having an existing Route-53 domain configured and correctly registered?",
+      "revId": "fa09123b37bf6b2416f9747ceb9a440e29f46c65",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
