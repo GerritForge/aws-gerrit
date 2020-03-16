@@ -23,6 +23,15 @@ Two templates are provided in this example:
 * 1 Internet Gateway
 * 1 type A alias DNS entry
 
+### Data persistency
+
+* EBS volumes for:
+  * Configuration
+  * Indexes
+  * Caches
+  * Data
+  * Git repositories
+
 ### Deployment type
 
 * Latest Gerrit version deployed using the official [Docker image](https://hub.docker.com/r/gerritcodereview/gerrit)
