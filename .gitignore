@@ -1,0 +1,3 @@
+setup.env
+*/gerrit/plugins/*.jar
+*/gerrit/etc/ssh_*
