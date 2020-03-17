@@ -42,6 +42,30 @@
     },
     {
       "key": {
+        "uuid": "73a4252e_c84ac747",
+        "filename": "single-master/cf-service.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-17T11:24:59Z",
+      "side": 1,
+      "message": "Yes, you are right. Configuration definitively need to be backed in.\n\nSSH keys are in the etc directory as well, I think ideally they should go in a vault (Amazon KMS).\n\nWhat if we get there iteratively and start by baking them in and in a follow up change we integrate Amazon KMS? WDYT?",
+      "parentUuid": "b211387d_ee579770",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 25
+      },
+      "revId": "51538a64c26b050dea4b67edfa161ce19e30fcf5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "b5c01226_ce4f324b",
         "filename": "single-master/cf-service.yml",
         "patchSetId": 3
