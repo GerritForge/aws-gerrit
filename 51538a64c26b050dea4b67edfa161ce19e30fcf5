@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "41cbaa81_4c35ac02",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-17T09:41:16Z",
+      "side": 1,
+      "message": "Should be put down at L11, together with the rest of the commit footer.",
+      "revId": "51538a64c26b050dea4b67edfa161ce19e30fcf5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b211387d_ee579770",
+        "filename": "single-master/cf-service.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-17T09:41:16Z",
+      "side": 1,
+      "message": "Why do we need the etc in a persistent volume? The configuration should be \"baked in\", with possibly some variables to be replaced at startup.\n\nDeployments should be immutable in terms of configuration. New configuration \u003d upgrade.",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 25
+      },
+      "revId": "51538a64c26b050dea4b67edfa161ce19e30fcf5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b5c01226_ce4f324b",
+        "filename": "single-master/cf-service.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-17T09:41:16Z",
+      "side": 1,
+      "message": "Plugins should be also baked in the Docker image.",
+      "range": {
+        "startLine": 62,
+        "startChar": 0,
+        "endLine": 65,
+        "endChar": 29
+      },
+      "revId": "51538a64c26b050dea4b67edfa161ce19e30fcf5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
