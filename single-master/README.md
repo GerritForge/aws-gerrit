@@ -22,6 +22,7 @@ Two templates are provided in this example:
  * SSH on port 29418
 * 1 Internet Gateway
 * 1 type A alias DNS entry
+* An SSL certificate available in [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/)
 
 ### Deployment type
 
@@ -39,10 +40,16 @@ Two templates are provided in this example:
 
 ## How to run it
 
+### Prerequisites
+
 ### Getting Started
 
-As a prerequisite to run this stack, you will need a registered and correctly
-configured domain in [Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started.html).
+As a prerequisite to run this stack, you will need:
+* a registered and correctly configured domain in [Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started.html)
+* an SSL Certificate in AWS Certificate Manager
+
+You can find more information on how to create and handle certificates in AWS
+[here](https://aws.amazon.com/certificate-manager/getting-started/).
 
 Once you will have it you can continue with the next steps:
 
@@ -59,7 +66,7 @@ instances as follow: `ssh -i yourKeyPairs.pem <ec2_instance_ip>`*
 * Create the cluster, service and DNS routing stacks:
 
 ```
-make create-all
+make create-all SSL_CERTIFICATE_ARN='arn:aws:acm:us-east-2:1173812332107:certificate/41eb8e52-c833-3222-a5b2-d79107f3e5e1'
 ```
 
 ### Cleaning up
@@ -86,11 +93,12 @@ make delete-all CLUSTER_STACK_NAME=my-cluster-stack SERVICE_STACK_NAME=my-servic
 
 This is the list of the parameters:
 
-* `CLUSTER_STACK_NAME`: name of the cluster stack. `gerrit-cluster` by default.
-* `SERVICE_STACK_NAME`: name of the service stack. `gerrit-service` by default.
-* `DNS_ROUTING_STACK_NAME`: name of the DNS routing stack. `gerrit-dns-routing` by default.
-* `HOSTED_ZONE_NAME`: name of the hosted zone. `mycompany.com` by default.
-* `SUBDOMAIN`: name of the sub domain. `gerrit-master-demo` by default.
+* `SSL_CERTIFICATE_ARN`: Mandatory. ANR of the SSL Certificate.
+* `CLUSTER_STACK_NAME`: Optional. Name of the cluster stack. `gerrit-cluster` by default.
+* `SERVICE_STACK_NAME`: Optional. Name of the service stack. `gerrit-service` by default.
+* `DNS_ROUTING_STACK_NAME`: Optional. Name of the DNS routing stack. `gerrit-dns-routing` by default.
+* `HOSTED_ZONE_NAME`: Optional. Name of the hosted zone. `mycompany.com` by default.
+* `SUBDOMAIN`: Optional. Name of the sub domain. `gerrit-master-demo` by default.
 
 ### Access your Gerrit
 
