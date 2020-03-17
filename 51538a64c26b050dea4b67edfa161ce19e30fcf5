@@ -86,6 +86,30 @@
       "revId": "51538a64c26b050dea4b67edfa161ce19e30fcf5",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b5ff8765_eb08c2e0",
+        "filename": "single-master/cf-service.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-17T11:25:16Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "b5c01226_ce4f324b",
+      "range": {
+        "startLine": 62,
+        "startChar": 0,
+        "endLine": 65,
+        "endChar": 29
+      },
+      "revId": "51538a64c26b050dea4b67edfa161ce19e30fcf5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
     }
   ]
 }
