@@ -66,6 +66,30 @@
     },
     {
       "key": {
+        "uuid": "6bd9d00f_7295c430",
+        "filename": "single-master/cf-service.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-17T13:18:53Z",
+      "side": 1,
+      "message": "Yes, makes sense to have the support for AWS KMS in a separate change.",
+      "parentUuid": "73a4252e_c84ac747",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 25
+      },
+      "revId": "51538a64c26b050dea4b67edfa161ce19e30fcf5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "b5c01226_ce4f324b",
         "filename": "single-master/cf-service.yml",
         "patchSetId": 3
