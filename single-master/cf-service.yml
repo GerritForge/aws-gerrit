@@ -35,6 +35,13 @@ Parameters:
         Description: The subdomain of the Gerrit cluster
         Type: String
         Default: gerrit-master-demo
+  HTTPSPort:
+        Description: Gerrit HTTPS port
+        Type: Number
+        Default: 443
+  CertificateArn:
+        Description: SSL Certificates ARN
+        Type: String
 
 Resources:
     Service:
@@ -68,9 +75,10 @@ Resources:
                   Essential: true
                   Image: !Ref DockerImage
                   Environment:
-                    - Name: "CANONICAL_WEB_URL"
-                      Value: !Join [ '', [ 'http://', !Ref 'Subdomain', '.', !Ref 'HostedZoneName' ] ]
-                  Environment:
+                    - Name: CANONICAL_WEB_URL
+                      Value: !Sub 'https://${Subdomain}.${HostedZoneName}'
+                    - Name: HTTPD_LISTEN_URL
+                      Value: proxy-https://*:8080/
                     - Name: "region"
                       Value: !Ref AWS::Region
                   Cpu: 1024
@@ -121,12 +129,14 @@ Resources:
         Type: AWS::ElasticLoadBalancingV2::Listener
         DependsOn: LoadBalancer
         Properties:
+            Certificates:
+              - CertificateArn: !Ref CertificateArn
             DefaultActions:
             - Type: forward
               TargetGroupArn: !Ref HTTPTargetGroup
             LoadBalancerArn: !Ref LoadBalancer
-            Port: !Ref HTTPPort
-            Protocol: TCP
+            Port: !Ref HTTPSPort
+            Protocol: TLS
 
     SSHTargetGroup:
         Type: AWS::ElasticLoadBalancingV2::TargetGroup
@@ -201,3 +211,8 @@ Outputs:
     Value: !Ref Subdomain
     Export:
       Name: !Join [ ':', [ !Ref 'AWS::StackName', 'Subdomain' ] ]
+  CanonicalWebUrl:
+    Description: Canonical Web URL
+    Value: !Sub 'https://${Subdomain}.${HostedZoneName}'
+    Export:
+      Name: !Join [ ':', [ !Ref 'AWS::StackName', 'CanonicalWebUrl' ] ]

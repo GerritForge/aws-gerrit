@@ -7,6 +7,7 @@ DNS_ROUTING_TEMPLATE:=cf-dns-route.yml
 HOSTED_ZONE_NAME:=mycompany.com
 SUBDOMAIN:=gerrit-master-demo
 AWS_REGION:=us-east-2
+SSL_CERTIFICATE_ARN=
 AWS_FC_COMMAND=export AWS_PAGER=;aws cloudformation
 
 .PHONY: create-all delete-all \
@@ -34,7 +35,8 @@ service:
 		--parameters \
 		ParameterKey=ClusterStackName,ParameterValue=$(CLUSTER_STACK_NAME) \
 		ParameterKey=HostedZoneName,ParameterValue=$(HOSTED_ZONE_NAME) \
-		ParameterKey=Subdomain,ParameterValue=$(SUBDOMAIN)
+		ParameterKey=Subdomain,ParameterValue=$(SUBDOMAIN) \
+		ParameterKey=CertificateArn,ParameterValue=$(SSL_CERTIFICATE_ARN)
 
 dns-routing:
 	$(AWS_FC_COMMAND) create-stack \
