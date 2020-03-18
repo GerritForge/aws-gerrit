@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "940a3652_bc8135a6",
+        "filename": "single-master/gerrit/etc/ssh_host_ecdsa_384_key",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-18T17:07:22Z",
+      "side": 1,
+      "message": "All the keys are temporarily in the repo waiting to switch to AWS Secret manager in a follow up change.",
+      "revId": "bf3c1bee43ecebd3e88246bd800d29dce12ea7cb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
