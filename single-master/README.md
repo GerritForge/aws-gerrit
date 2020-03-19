@@ -107,7 +107,8 @@ you can run the script to upload them to AWS Secret Manager:
 * Create a key pair to access the EC2 instances in the cluster:
 
 ```
-aws ec2 create-key-pair --key-name gerrit-cluster-keys
+aws ec2 create-key-pair --key-name gerrit-cluster-keys \
+  --query 'KeyMaterial' --output text > gerrit-cluster.pem
 ```
 
 *NOTE: the EC2 key pair are useful when you need to connect to the EC2 instances
