@@ -107,3 +107,6 @@ delete-all: delete-dns-routing wait-for-dns-routing-deletion \
 
 gerrit-publish:
 	$(MAKE) -C gerrit gerrit-publish
+
+ldap-publish:
+	$(MAKE) -C ldap ldap-publish
