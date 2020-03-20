@@ -4,7 +4,7 @@ USER root
 
 RUN yum install -y https://centos7.iuscommunity.org/ius-release.rpm \
     && yum update -y \
-    && yum install -y python36u python36u-libs python36u-devel python36u-pip
+    && yum install -y python36u python36u-libs python36u-devel python36u-pip bind-utils telnet
 
 # Installing scripts to get SSH Keys from Secret Manager
 COPY --chown=gerrit:gerrit requirements.txt /tmp

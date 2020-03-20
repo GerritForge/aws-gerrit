@@ -74,7 +74,7 @@ As a prerequisite to run this stack, you will need:
 * to [publish the Docker image](#publish-custom-gerrit-docker-image) with your
 Gerrit configuration
 * to [add Gerrit secrets](#add-gerrit-secrets-in-aws-secret-manager) in AWS Secret
-Manager
+* to [publish the Keycloak image](#publish-custom-kyecloack-docker-image)
 * an SSL Certificate in AWS Certificate Manager (you can find more information on
   how to create and handle certificates in AWS [here](https://aws.amazon.com/certificate-manager/getting-started/)
 
@@ -120,6 +120,13 @@ You can now run the script to upload them to AWS Secret Manager:
 * Adjust the `gerrit.config` in `./gerrit/etc`
 * Add the plugins you want to install in `./gerrit/plugins`
 * Publish the image: `make gerrit-publish`
+
+### Publish Keycloak Docker image
+
+* Create the repository in the Docker registry:
+  `aws ecr create-repository --repository-name aws-gerrit/keycloak`
+* Adjust the you realm configuration in `./ldap/realm/dev-realm.json`
+* Publish the image: `make ldap-publish`
 
 ### Getting Started
 
