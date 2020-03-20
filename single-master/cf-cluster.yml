@@ -33,7 +33,7 @@ Mappings:
   # Hard values for the subnet masks. These masks define
   # the range of internal IP addresses that can be assigned.
   # The VPC can have all IP's from 10.0.0.0 to 10.0.255.255
-  # There is the subnet which cover the ranges:
+  # There is asubnet which cover the ranges:
   #
   # 10.0.0.0 - 10.0.0.255
   SubnetConfig:

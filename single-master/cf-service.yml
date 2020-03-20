@@ -4,6 +4,9 @@ Parameters:
   GerritServiceName:
     Type: String
     Default: gerrit-master
+  LDAPServiceName:
+    Type: String
+    Default: gerrit-ldap
   ClusterStackName:
       Description: Stack name of the ECS cluster to deply the serivces
       Type: String
@@ -12,7 +15,11 @@ Parameters:
       Description: An environment name that will be prefixed to resource names
       Type: String
       Default: test
-  DockerImage:
+  LDAPDockerImage:
+        Description: LDAP Keycloak Docker image
+        Type: String
+        Default: aws-gerrit/keycloak:latest
+  GerritDockerImage:
         Description: Gerrit official Docker image
         Type: String
         Default: aws-gerrit/gerrit:latest
@@ -23,6 +30,10 @@ Parameters:
         Description: How many instances of this task should we run across our cluster?
         Type: Number
         Default: 1
+  LDAPHTTPHostPort:
+        Description: LDAP HTTP Admin port
+        Type: Number
+        Default: 9090
   HTTPPort:
         Description: Gerrit HTTP port
         Type: Number
@@ -67,7 +78,46 @@ Parameters:
       Default: gerrit-db
 
 Resources:
-    Service:
+    PrivateNamespace:
+        Type: AWS::ServiceDiscovery::PrivateDnsNamespace
+        Properties:
+          Name: internal-gerritforgeaws.com
+          Vpc:
+            Fn::ImportValue:
+              !Join [':', [!Ref 'ClusterStackName', 'VPCId']]
+    DiscoveryService:
+        Type: AWS::ServiceDiscovery::Service
+        Properties:
+          Description: Discovery Service for Gerrit
+          DnsConfig:
+            RoutingPolicy: MULTIVALUE
+            DnsRecords:
+              - TTL: 60
+                Type: SRV
+          HealthCheckCustomConfig:
+            FailureThreshold: 1
+          Name: auth-service
+          NamespaceId: !Ref PrivateNamespace
+    LDAPService:
+        Type: AWS::ECS::Service
+        DependsOn:
+          - LDAPHTTPListener
+        Properties:
+            Cluster:
+              Fn::ImportValue:
+                  !Join [':', [!Ref 'ClusterStackName', 'ClusterName']]
+            DesiredCount: 1
+            TaskDefinition: !Ref LDAPTaskDefinition
+            ServiceRegistries:
+              - RegistryArn: !GetAtt DiscoveryService.Arn
+                ContainerPort: !Ref HTTPPort
+                ContainerName: !Ref LDAPServiceName
+            LoadBalancers:
+                - ContainerName: !Ref LDAPServiceName
+                  ContainerPort: !Ref HTTPPort
+                  TargetGroupArn: !Ref LDAPHTTPTargetGroup
+
+    GerritService:
         Type: AWS::ECS::Service
         DependsOn:
           - HTTPListener
@@ -96,7 +146,7 @@ Resources:
             ContainerDefinitions:
                 - Name: !Ref GerritServiceName
                   Essential: true
-                  Image: !Sub '${DockerRegistryUrl}/${DockerImage}'
+                  Image: !Sub '${DockerRegistryUrl}/${GerritDockerImage}'
                   Environment:
                     - Name: CANONICAL_WEB_URL
                       Value: !Sub 'https://${Subdomain}.${HostedZoneName}'
@@ -172,6 +222,37 @@ Resources:
             LogGroupName: !Ref AWS::StackName
             RetentionInDays: 14
 
+    LDAPTaskDefinition:
+        Type: AWS::ECS::TaskDefinition
+        Properties:
+            Family: !Join ['', [!Ref LDAPServiceName, TaskDefinition]]
+            TaskRoleArn: !Ref ECSTaskExecutionRole
+            ExecutionRoleArn: !Ref ECSTaskExecutionRole
+            NetworkMode: bridge
+            ContainerDefinitions:
+                - Name: !Ref LDAPServiceName
+                  Essential: true
+                  Image: !Sub '${DockerRegistryUrl}/${LDAPDockerImage}'
+                  Environment:
+                    - Name: KEYCLOAK_USER
+                      Value: admin
+                    - Name: KEYCLOAK_PASSWORD
+                      Value: secure
+                    - Name: PROXY_ADDRESS_FORWARDING
+                      Value: true
+                  Cpu: 1024
+                  Memory: 2048
+                  PortMappings:
+                    - ContainerPort: !Ref HTTPPort
+                      HostPort: !Ref LDAPHTTPHostPort
+                      Protocol: tcp
+                  LogConfiguration:
+                    LogDriver: awslogs
+                    Options:
+                        awslogs-group: !Ref AWS::StackName
+                        awslogs-region: !Ref AWS::Region
+                        awslogs-stream-prefix: !Ref EnvironmentName
+
     LoadBalancer:
         Type: AWS::ElasticLoadBalancingV2::LoadBalancer
         Properties:
@@ -226,6 +307,27 @@ Resources:
               TargetGroupArn: !Ref SSHTargetGroup
             LoadBalancerArn: !Ref LoadBalancer
             Port: !Ref SSHPort
+            Protocol: TCP
+
+    LDAPHTTPTargetGroup:
+        Type: AWS::ElasticLoadBalancingV2::TargetGroup
+        DependsOn: LoadBalancer
+        Properties:
+            VpcId:
+              Fn::ImportValue:
+                  !Join [':', [!Ref 'ClusterStackName', 'VPCId']]
+            Port: !Ref LDAPHTTPHostPort
+            Protocol: TCP
+
+    LDAPHTTPListener:
+        Type: AWS::ElasticLoadBalancingV2::Listener
+        DependsOn: LoadBalancer
+        Properties:
+            DefaultActions:
+            - Type: forward
+              TargetGroupArn: !Ref LDAPHTTPTargetGroup
+            LoadBalancerArn: !Ref LoadBalancer
+            Port: !Ref LDAPHTTPHostPort
             Protocol: TCP
 
     # This is a role which is used by the ECS tasks themselves.
@@ -289,8 +391,13 @@ Outputs:
     Value: !Ref Subdomain
     Export:
       Name: !Join [ ':', [ !Ref 'AWS::StackName', 'Subdomain' ] ]
-  CanonicalWebUrl:
+  GerritCanonicalWebUrl:
     Description: Canonical Web URL
     Value: !Sub 'https://${Subdomain}.${HostedZoneName}'
     Export:
-      Name: !Join [ ':', [ !Ref 'AWS::StackName', 'CanonicalWebUrl' ] ]
+      Name: !Join [ ':', [ !Ref 'AWS::StackName', 'GerritCanonicalWebUrl' ] ]
+  LDAPAdminWebUrl:
+    Description: LDAP Admin Web URL
+    Value: !Join [ ':', [!GetAtt 'LoadBalancer.DNSName', !Ref LDAPHTTPHostPort] ]
+    Export:
+      Name: !Join [ ':', [ !Ref 'AWS::StackName', 'LDAPAdminWebUrl' ] ]
