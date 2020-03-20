@@ -107,3 +107,16 @@ delete-all: delete-dns-routing wait-for-dns-routing-deletion \
 
 gerrit-publish:
 	$(MAKE) -C gerrit gerrit-publish
+
+docker-registry-login-1:
+	aws ecr get-login-password --region $(AWS_REGION) \
+		| docker login --username AWS --password-stdin $(DOCKER_REGISTRY_URI)/aws-gerrit/keycloak
+
+ldap-build:
+	cd $(PWD)/ldap
+	docker build -t aws-gerrit/keycloak .
+	docker tag aws-gerrit/keycloak:latest $(DOCKER_REGISTRY_URI)/aws-gerrit/keycloak:latest
+	cd ..
+
+ldap-publish: docker-registry-login-1 ldap-publish
+	docker push $(DOCKER_REGISTRY_URI)/aws-gerrit/keycloak:latest
