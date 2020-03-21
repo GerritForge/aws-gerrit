@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6b95f30c_be7b67c9",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-21T10:44:19Z",
+      "side": 1,
+      "message": "This should go at L11",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 20
+      },
+      "revId": "8b0b21bbdf669d5c60b442ee6dd48de020e9e907",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "38ce888c_a2237fa3",
+        "filename": "single-master/gerrit/etc/gerrit.config",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-21T10:44:19Z",
+      "side": 1,
+      "message": "Should this be gerrit?",
+      "range": {
+        "startLine": 27,
+        "startChar": 1,
+        "endLine": 27,
+        "endChar": 12
+      },
+      "revId": "8b0b21bbdf669d5c60b442ee6dd48de020e9e907",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f1cbb5e9_ee2416fa",
+        "filename": "single-master/gerrit/etc/gerrit.config",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-21T10:44:19Z",
+      "side": 1,
+      "message": "Is this strictly needed?",
+      "range": {
+        "startLine": 28,
+        "startChar": 1,
+        "endLine": 28,
+        "endChar": 76
+      },
+      "revId": "8b0b21bbdf669d5c60b442ee6dd48de020e9e907",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "28162ca4_c9e0c4f6",
+        "filename": "single-master/gerrit/etc/secure.config",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-21T10:44:19Z",
+      "side": 1,
+      "message": "This should be also stored in the secrets.",
+      "range": {
+        "startLine": 2,
+        "startChar": 27,
+        "endLine": 2,
+        "endChar": 63
+      },
+      "revId": "8b0b21bbdf669d5c60b442ee6dd48de020e9e907",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "58f84759_df6bfc54",
+        "filename": "single-master/get_ssh_keys_from_secret_manager.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-21T10:44:19Z",
+      "side": 1,
+      "message": "Is it fine to have this hardcoded?",
+      "range": {
+        "startLine": 9,
+        "startChar": 18,
+        "endLine": 9,
+        "endChar": 29
+      },
+      "revId": "8b0b21bbdf669d5c60b442ee6dd48de020e9e907",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
