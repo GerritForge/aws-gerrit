@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "72cca7d3_4a5b3507",
+        "filename": "single-master/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-23T22:46:25Z",
+      "side": 1,
+      "message": "A",
+      "range": {
+        "startLine": 25,
+        "startChar": 2,
+        "endLine": 25,
+        "endChar": 4
+      },
+      "revId": "fe64d7d2c0644e1eec3d180fc17dc78d4bcd4d26",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "39c6e319_5d41527c",
+        "filename": "single-master/cf-service.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-23T22:46:25Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this come from the HTTPPort parameter?",
+      "range": {
+        "startLine": 104,
+        "startChar": 45,
+        "endLine": 104,
+        "endChar": 49
+      },
+      "revId": "fe64d7d2c0644e1eec3d180fc17dc78d4bcd4d26",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
