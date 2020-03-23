@@ -1,0 +1,90 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "483da068_c6639f19",
+        "filename": "single-master/cf-cluster.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-23T22:53:19Z",
+      "side": 1,
+      "message": "a (+ space)",
+      "range": {
+        "startLine": 36,
+        "startChar": 13,
+        "endLine": 36,
+        "endChar": 15
+      },
+      "revId": "286dc72fbc4c3606d396a9fcdbd7918098e8ff48",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "984c6eb5_6e7c8cc2",
+        "filename": "single-master/cf-service.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-23T22:53:19Z",
+      "side": 1,
+      "message": "Should this be stored in the AWS Credentials manager?",
+      "range": {
+        "startLine": 216,
+        "startChar": 29,
+        "endLine": 216,
+        "endChar": 35
+      },
+      "revId": "286dc72fbc4c3606d396a9fcdbd7918098e8ff48",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "72ea2632_854b4a17",
+        "filename": "single-master/ldap/Dockerfile",
+        "patchSetId": 4
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-23T22:53:19Z",
+      "side": 1,
+      "message": "What about KEYCLOAK_USER and KEYCLOAK_PASSWORD ? Are you going to define them at AWS level and fetch them from the AWS Credentials?",
+      "revId": "286dc72fbc4c3606d396a9fcdbd7918098e8ff48",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3c1bee68_5377a3a4",
+        "filename": "single-master/ldap/realm/dev-realm.json",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-23T22:53:19Z",
+      "side": 1,
+      "message": "Should these be in the AWS credentials as well?",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 234
+      },
+      "revId": "286dc72fbc4c3606d396a9fcdbd7918098e8ff48",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
