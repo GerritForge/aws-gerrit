@@ -72,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "8c0d4fda_da820e76",
+        "filename": "single-master/gerrit/etc/gerrit.config",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-23T22:41:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "38ce888c_a2237fa3",
+      "range": {
+        "startLine": 27,
+        "startChar": 1,
+        "endLine": 27,
+        "endChar": 12
+      },
+      "revId": "8b0b21bbdf669d5c60b442ee6dd48de020e9e907",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f1cbb5e9_ee2416fa",
         "filename": "single-master/gerrit/etc/gerrit.config",
         "patchSetId": 3
@@ -107,6 +131,30 @@
       "side": 1,
       "message": "If I don\u0027t set it Gerrit doesn\u0027t start complaining about JAVA_HOME not being set and it suggests to set it in the container.javaHome when using Docker.",
       "parentUuid": "f1cbb5e9_ee2416fa",
+      "range": {
+        "startLine": 28,
+        "startChar": 1,
+        "endLine": 28,
+        "endChar": 76
+      },
+      "revId": "8b0b21bbdf669d5c60b442ee6dd48de020e9e907",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "75ba21c5_0b4545ca",
+        "filename": "single-master/gerrit/etc/gerrit.config",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-23T22:41:46Z",
+      "side": 1,
+      "message": "That\u0027s just a warning though, because any minor upgrade of the JVM would make this variable stale.",
+      "parentUuid": "6cbf78b6_541ea44a",
       "range": {
         "startLine": 28,
         "startChar": 1,
