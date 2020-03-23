@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "39f8c93e_0dcc6cb5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-23T12:17:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6b95f30c_be7b67c9",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 20
+      },
+      "revId": "8b0b21bbdf669d5c60b442ee6dd48de020e9e907",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "38ce888c_a2237fa3",
         "filename": "single-master/gerrit/etc/gerrit.config",
         "patchSetId": 3
@@ -71,6 +95,30 @@
     },
     {
       "key": {
+        "uuid": "6cbf78b6_541ea44a",
+        "filename": "single-master/gerrit/etc/gerrit.config",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-23T12:17:38Z",
+      "side": 1,
+      "message": "If I don\u0027t set it Gerrit doesn\u0027t start complaining about JAVA_HOME not being set and it suggests to set it in the container.javaHome when using Docker.",
+      "parentUuid": "f1cbb5e9_ee2416fa",
+      "range": {
+        "startLine": 28,
+        "startChar": 1,
+        "endLine": 28,
+        "endChar": 76
+      },
+      "revId": "8b0b21bbdf669d5c60b442ee6dd48de020e9e907",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "28162ca4_c9e0c4f6",
         "filename": "single-master/gerrit/etc/secure.config",
         "patchSetId": 3
@@ -94,6 +142,30 @@
     },
     {
       "key": {
+        "uuid": "6e60c45c_cbab8d7d",
+        "filename": "single-master/gerrit/etc/secure.config",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-23T12:17:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "28162ca4_c9e0c4f6",
+      "range": {
+        "startLine": 2,
+        "startChar": 27,
+        "endLine": 2,
+        "endChar": 63
+      },
+      "revId": "8b0b21bbdf669d5c60b442ee6dd48de020e9e907",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "58f84759_df6bfc54",
         "filename": "single-master/get_ssh_keys_from_secret_manager.py",
         "patchSetId": 3
@@ -114,6 +186,30 @@
       "revId": "8b0b21bbdf669d5c60b442ee6dd48de020e9e907",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3d5bf9df_7cac6035",
+        "filename": "single-master/get_ssh_keys_from_secret_manager.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-23T12:17:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "58f84759_df6bfc54",
+      "range": {
+        "startLine": 9,
+        "startChar": 18,
+        "endLine": 9,
+        "endChar": 29
+      },
+      "revId": "8b0b21bbdf669d5c60b442ee6dd48de020e9e907",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
