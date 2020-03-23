@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "211fe179_8dafe20b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 6
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-23T22:34:13Z",
+      "side": 1,
+      "message": "Feature should go at L11, in the footer of the commit message.",
+      "revId": "1134b8ab9e729309dd8e0fd3cbc473987c667ae7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
