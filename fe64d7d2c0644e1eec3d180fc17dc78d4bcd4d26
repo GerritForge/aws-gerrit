@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "47b0af11_0087a544",
+        "filename": "single-master/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-24T12:34:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "72cca7d3_4a5b3507",
+      "range": {
+        "startLine": 25,
+        "startChar": 2,
+        "endLine": 25,
+        "endChar": 4
+      },
+      "revId": "fe64d7d2c0644e1eec3d180fc17dc78d4bcd4d26",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "39c6e319_5d41527c",
         "filename": "single-master/cf-service.yml",
         "patchSetId": 4
@@ -45,6 +69,30 @@
       "revId": "fe64d7d2c0644e1eec3d180fc17dc78d4bcd4d26",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f110fdfa_eb90dae9",
+        "filename": "single-master/cf-service.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-24T12:34:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "39c6e319_5d41527c",
+      "range": {
+        "startLine": 104,
+        "startChar": 45,
+        "endLine": 104,
+        "endChar": 49
+      },
+      "revId": "fe64d7d2c0644e1eec3d180fc17dc78d4bcd4d26",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
