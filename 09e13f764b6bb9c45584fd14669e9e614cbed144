@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a106a668_a5c2257f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2020-03-26T17:18:44Z",
+      "side": 1,
+      "message": "s/Added/Add/",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 5
+      },
+      "revId": "09e13f764b6bb9c45584fd14669e9e614cbed144",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "de73271f_c8c46d8d",
+        "filename": "ldap/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2020-03-26T17:18:44Z",
+      "side": 1,
+      "message": "This *is* a set of ...",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 37
+      },
+      "revId": "09e13f764b6bb9c45584fd14669e9e614cbed144",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "549f20df_f4450e08",
+        "filename": "ldap/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2020-03-26T17:18:44Z",
+      "side": 1,
+      "message": "should this be mycompany.com?",
+      "range": {
+        "startLine": 47,
+        "startChar": 31,
+        "endLine": 47,
+        "endChar": 49
+      },
+      "revId": "09e13f764b6bb9c45584fd14669e9e614cbed144",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b6184c59_febf701d",
+        "filename": "ldap/cf-ldap.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2020-03-26T17:18:44Z",
+      "side": 1,
+      "message": "Is this a custom AMI? is it private?\nWould it be accessible if we had to deploy this to a different AWS account?",
+      "range": {
+        "startLine": 26,
+        "startChar": 15,
+        "endLine": 26,
+        "endChar": 36
+      },
+      "revId": "09e13f764b6bb9c45584fd14669e9e614cbed144",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "20b364c3_b2f557d7",
+        "filename": "ldap/cf-ldap.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2020-03-26T17:18:44Z",
+      "side": 1,
+      "message": "Only gerrit needs to talk to LDAP right? it doesn\u0027t need to be public, or does it?\nIs it for the UI interface?",
+      "range": {
+        "startLine": 47,
+        "startChar": 20,
+        "endLine": 47,
+        "endChar": 40
+      },
+      "revId": "09e13f764b6bb9c45584fd14669e9e614cbed144",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
