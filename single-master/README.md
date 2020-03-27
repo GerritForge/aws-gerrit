@@ -121,6 +121,9 @@ You can now run the script to upload them to AWS Secret Manager:
 * Add the plugins you want to install in `./gerrit/plugins`
 * Publish the image: `make gerrit-publish`
 
+NOTE: If you need a testing LDAP server you can find details on how to easily
+create one in the [LDAP folder](../ldap/README.md).
+
 ### Getting Started
 
 * Create a key pair to access the EC2 instances in the cluster:
