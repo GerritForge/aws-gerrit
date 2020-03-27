@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6959bf61_ca948986",
+        "filename": "single-master/gerrit/etc/secure.config.template",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-27T13:23:54Z",
+      "side": 1,
+      "message": "Not sure if it makes sense to add this in the Secret Manager. People might not even want to use LDAP. WDYT?",
+      "range": {
+        "startLine": 4,
+        "startChar": 12,
+        "endLine": 4,
+        "endChar": 18
+      },
+      "revId": "0d9808f174ef8abcd9c0f4ca1b0ebc71e19cbc61",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
