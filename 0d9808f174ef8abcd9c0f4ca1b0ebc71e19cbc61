@@ -25,6 +25,99 @@
     },
     {
       "key": {
+        "uuid": "9d6a8ae2_f4a7be07",
+        "filename": "single-master/gerrit/etc/gerrit.config",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-30T22:36:57Z",
+      "side": 1,
+      "message": "Yes, this should be set through a deployment variable.\nAlternatively, we could use an environment variable passed to the container and expand during startup, as we did for the HTTPD_LISTEN_URL.",
+      "parentUuid": "2b4ef2ba_a5d90b63",
+      "range": {
+        "startLine": 14,
+        "startChar": 11,
+        "endLine": 14,
+        "endChar": 48
+      },
+      "revId": "0d9808f174ef8abcd9c0f4ca1b0ebc71e19cbc61",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9ed07b8e_0b754917",
+        "filename": "single-master/gerrit/etc/gerrit.config",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-30T22:36:57Z",
+      "side": 1,
+      "message": "Also a variable.",
+      "range": {
+        "startLine": 15,
+        "startChar": 13,
+        "endLine": 15,
+        "endChar": 39
+      },
+      "revId": "0d9808f174ef8abcd9c0f4ca1b0ebc71e19cbc61",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1739daec_21e1e94e",
+        "filename": "single-master/gerrit/etc/gerrit.config",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-30T22:36:57Z",
+      "side": 1,
+      "message": "Also a variable.",
+      "range": {
+        "startLine": 16,
+        "startChar": 16,
+        "endLine": 16,
+        "endChar": 33
+      },
+      "revId": "0d9808f174ef8abcd9c0f4ca1b0ebc71e19cbc61",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ad443780_62fcdf30",
+        "filename": "single-master/gerrit/etc/gerrit.config",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-30T22:36:57Z",
+      "side": 1,
+      "message": "Also a variable.",
+      "range": {
+        "startLine": 20,
+        "startChar": 14,
+        "endLine": 20,
+        "endChar": 31
+      },
+      "revId": "0d9808f174ef8abcd9c0f4ca1b0ebc71e19cbc61",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "6959bf61_ca948986",
         "filename": "single-master/gerrit/etc/secure.config.template",
         "patchSetId": 2
@@ -60,6 +153,30 @@
       "side": 1,
       "message": "perhaps not in secret manager, bu shouldn\u0027t this be in the secure.config?",
       "parentUuid": "6959bf61_ca948986",
+      "range": {
+        "startLine": 4,
+        "startChar": 12,
+        "endLine": 4,
+        "endChar": 18
+      },
+      "revId": "0d9808f174ef8abcd9c0f4ca1b0ebc71e19cbc61",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f90c8281_4fb2d3c4",
+        "filename": "single-master/gerrit/etc/secure.config.template",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-30T22:36:57Z",
+      "side": 1,
+      "message": "It is in secure.config and its value should be in Secret Manager.",
+      "parentUuid": "8dbd2455_2e437062",
       "range": {
         "startLine": 4,
         "startChar": 12,
