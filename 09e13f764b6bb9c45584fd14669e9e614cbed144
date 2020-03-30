@@ -214,6 +214,30 @@
     },
     {
       "key": {
+        "uuid": "1be1bb33_ad25a860",
+        "filename": "ldap/cf-ldap.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-30T10:05:24Z",
+      "side": 1,
+      "message": "Yep I thought about it. I am happy to do it in a follow up change if it is ok.\nI have created the issue already: https://bugs.chromium.org/p/gerrit/issues/detail?id\u003d12513",
+      "parentUuid": "b3679f16_b0f216a9",
+      "range": {
+        "startLine": 26,
+        "startChar": 15,
+        "endLine": 26,
+        "endChar": 36
+      },
+      "revId": "09e13f764b6bb9c45584fd14669e9e614cbed144",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "20b364c3_b2f557d7",
         "filename": "ldap/cf-ldap.yml",
         "patchSetId": 4
