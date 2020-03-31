@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4fabb3ee_bb43f627",
+        "filename": "single-master/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-31T13:34:16Z",
+      "side": 1,
+      "message": "These are instructions on how to setup this up: I believe it would be best to use the imperative or the present rather than the past.\n\nE.g. Setup email notification with ....",
+      "range": {
+        "startLine": 122,
+        "startChar": 41,
+        "endLine": 122,
+        "endChar": 84
+      },
+      "revId": "95742e3519554a6938784ea647e79002fd4f57dd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
