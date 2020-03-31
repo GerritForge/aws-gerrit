@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "1ccc1daf_79b5eb2c",
+        "filename": "single-master/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-31T13:46:27Z",
+      "side": 1,
+      "message": "We should probably create an appendix at the end where to give examples on how to create external services (LDAP and SMTP).\n\nSomething like:\n\n# External services\n\n## SMTP Server\n\n-- your paragraph and maybe example of commands you used to set it up\n\n## LDAP Server\n\nIf you need a testing LDAP server you can find details on how to easily\ncreate one in the [LDAP folder](../ldap/README.md).\n\nWDYT ?",
+      "range": {
+        "startLine": 120,
+        "startChar": 5,
+        "endLine": 120,
+        "endChar": 17
+      },
+      "revId": "95742e3519554a6938784ea647e79002fd4f57dd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "4fabb3ee_bb43f627",
         "filename": "single-master/README.md",
         "patchSetId": 1
@@ -18,6 +41,29 @@
         "startChar": 41,
         "endLine": 122,
         "endChar": 84
+      },
+      "revId": "95742e3519554a6938784ea647e79002fd4f57dd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "685fd228_ebeabae2",
+        "filename": "single-master/gerrit/etc/gerrit.config.template",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-31T13:46:27Z",
+      "side": 1,
+      "message": "This should go in secret.config",
+      "range": {
+        "startLine": 27,
+        "startChar": 2,
+        "endLine": 27,
+        "endChar": 10
       },
       "revId": "95742e3519554a6938784ea647e79002fd4f57dd",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
