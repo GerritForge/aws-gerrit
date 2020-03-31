@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "8eb42d07_df86166a",
+        "filename": "single-master/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 1005270
+      },
+      "writtenOn": "2020-03-31T14:01:17Z",
+      "side": 1,
+      "message": "Good idea, I will do that",
+      "parentUuid": "1ccc1daf_79b5eb2c",
+      "range": {
+        "startLine": 120,
+        "startChar": 5,
+        "endLine": 120,
+        "endChar": 17
+      },
+      "revId": "95742e3519554a6938784ea647e79002fd4f57dd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "4fabb3ee_bb43f627",
         "filename": "single-master/README.md",
         "patchSetId": 1
