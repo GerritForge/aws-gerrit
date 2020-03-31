@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "6d4b7f24_97051576",
+        "filename": "single-master/gerrit/etc/gerrit.config",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-31T11:15:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9d6a8ae2_f4a7be07",
+      "range": {
+        "startLine": 14,
+        "startChar": 11,
+        "endLine": 14,
+        "endChar": 48
+      },
+      "revId": "0d9808f174ef8abcd9c0f4ca1b0ebc71e19cbc61",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9ed07b8e_0b754917",
         "filename": "single-master/gerrit/etc/gerrit.config",
         "patchSetId": 2
@@ -69,6 +93,30 @@
       "revId": "0d9808f174ef8abcd9c0f4ca1b0ebc71e19cbc61",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "faece42f_83f866eb",
+        "filename": "single-master/gerrit/etc/gerrit.config",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-31T11:15:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9ed07b8e_0b754917",
+      "range": {
+        "startLine": 15,
+        "startChar": 13,
+        "endLine": 15,
+        "endChar": 39
+      },
+      "revId": "0d9808f174ef8abcd9c0f4ca1b0ebc71e19cbc61",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     },
     {
       "key": {
@@ -95,6 +143,30 @@
     },
     {
       "key": {
+        "uuid": "5dce10f4_2f7eec62",
+        "filename": "single-master/gerrit/etc/gerrit.config",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-31T11:15:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1739daec_21e1e94e",
+      "range": {
+        "startLine": 16,
+        "startChar": 16,
+        "endLine": 16,
+        "endChar": 33
+      },
+      "revId": "0d9808f174ef8abcd9c0f4ca1b0ebc71e19cbc61",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ad443780_62fcdf30",
         "filename": "single-master/gerrit/etc/gerrit.config",
         "patchSetId": 2
@@ -115,6 +187,30 @@
       "revId": "0d9808f174ef8abcd9c0f4ca1b0ebc71e19cbc61",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "923fc2be_a8d43363",
+        "filename": "single-master/gerrit/etc/gerrit.config",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-31T11:15:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ad443780_62fcdf30",
+      "range": {
+        "startLine": 20,
+        "startChar": 14,
+        "endLine": 20,
+        "endChar": 31
+      },
+      "revId": "0d9808f174ef8abcd9c0f4ca1b0ebc71e19cbc61",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     },
     {
       "key": {
@@ -186,6 +282,30 @@
       "revId": "0d9808f174ef8abcd9c0f4ca1b0ebc71e19cbc61",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "649969d1_5e31a3f6",
+        "filename": "single-master/gerrit/etc/secure.config.template",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2020-03-31T11:15:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f90c8281_4fb2d3c4",
+      "range": {
+        "startLine": 4,
+        "startChar": 12,
+        "endLine": 4,
+        "endChar": 18
+      },
+      "revId": "0d9808f174ef8abcd9c0f4ca1b0ebc71e19cbc61",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
