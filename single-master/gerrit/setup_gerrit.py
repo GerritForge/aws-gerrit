@@ -90,5 +90,9 @@ with open(GERRIT_CONFIG_DIRECTORY + "gerrit.config", 'w', encoding = 'utf-8') as
                 LDAP_SERVER=config['ldap']['server'],
                 LDAP_USERNAME=config['ldap']['username'],
                 LDAP_ACCOUNT_BASE=config['ldap']['accountBase'],
-                LDAP_GROUP_BASE=config['ldap']['groupBase'])
+                LDAP_GROUP_BASE=config['ldap']['groupBase'],
+                SMTP_SERVER=config['smtp']["server"],
+                SMTP_USER=config['smtp']["user"],
+                SMTP_PASSWORD=config['smtp']["password"],
+                SMTP_DOMAIN=config['smtp']["domain"])
             )

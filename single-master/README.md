@@ -117,6 +117,15 @@ in the same directory of the SSH keys.
 You can now run the script to upload them to AWS Secret Manager:
 `add_secrets_aws_secrets_manager.sh /path/to/your/keys/directory`
 
+#### SMTP Service
+
+Current email notification configuration was tested with Amazon Simple Email Service.
+Details how setup SMTP service with Amazon SES can be found [here](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-email-set-up.html).
+
+To correctly setup email notifications Gerrit requires ssl protocol on default port 465 to
+be enabled on SMTP Server. It is possible to setup Gerrit to talk to standard SMTP port 25
+but by default all EC2 instances are blocking it. To enable port 25 please follow [this](https://aws.amazon.com/premiumsupport/knowledge-center/ec2-port-25-throttle/) link.
+
 ### Publish custom Gerrit Docker image
 
 * Create the repository in the Docker registry:
