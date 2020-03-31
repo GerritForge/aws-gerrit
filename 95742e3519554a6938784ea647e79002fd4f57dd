@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "3648c6d5_bfe11514",
+        "filename": "single-master/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 1005270
+      },
+      "writtenOn": "2020-03-31T14:02:20Z",
+      "side": 1,
+      "message": "But let\u0027s do that in follow up change because it\u0027s out of scope of this change",
+      "parentUuid": "8eb42d07_df86166a",
+      "range": {
+        "startLine": 120,
+        "startChar": 5,
+        "endLine": 120,
+        "endChar": 17
+      },
+      "revId": "95742e3519554a6938784ea647e79002fd4f57dd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "4fabb3ee_bb43f627",
         "filename": "single-master/README.md",
         "patchSetId": 1
