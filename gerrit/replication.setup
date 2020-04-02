@@ -1,0 +1,3 @@
+[remote-slave-1]
+  url = git://gerrit-slave.gerrit-demo.gerritforgeaws.com:9418/${name}.git
+  adminUrl = ssh://gerrit@gerrit-slave.gerrit-demo.gerritforgeaws.com:1022/var/gerrit/git/${name}.git
