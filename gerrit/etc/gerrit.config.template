@@ -5,8 +5,8 @@
 	instanceId = {{ GERRIT_INSTANCE_ID }}
 
 {% if MULTISITE_ENABLED is defined and MULTISITE_ENABLED == "true" %}
-	installDbModule = com.googlesource.gerrit.plugins.multisite.GitModule
-	installModule = com.googlesource.gerrit.plugins.multisite.Module
+	installDbModule = com.gerritforge.gerrit.plugins.multisite.GitModule
+	installModule = com.gerritforge.gerrit.plugins.multisite.Module
 	installModule = com.gerritforge.gerrit.eventbroker.BrokerApiModule
 {% elif REFS_DB_ENABLED is defined and REFS_DB_ENABLED == "true" %}
     installDbModule = com.ericsson.gerrit.plugins.highavailability.ValidationModule

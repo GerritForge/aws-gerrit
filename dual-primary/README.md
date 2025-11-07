@@ -361,7 +361,7 @@ channels:
 for how to enable this.
 * The `multi-site` group of plugins and resources allow the coordination and the exchange
 of gerrit specific events that are produced and consumed by the members of the multi-site deployment.
-(See the [multi-site design](https://gerrit.googlesource.com/plugins/multi-site/+/refs/heads/stable-3.2/DESIGN.md)
+(See the [multi-site design](https://github.com/GerritForge/multi-site/blob/master/DESIGN.md)
 for more information on this.
 
 ##### Requirements
@@ -377,7 +377,7 @@ cluster deployment. "false" by default.
 * `MULTISITE_KAFKA_BROKERS`: Required when "MULTISITE_ENABLED=true".
 Comma separated list of Kafka broker hosts (host:port)
 to use for publishing events to the message broker.
-* `MULTISITE_GLOBAL_PROJECTS`: Optional. Comma separated list of patterns (see [projects.pattern](https://gerrit.googlesource.com/plugins/multi-site/+/refs/heads/stable-3.2/src/main/resources/Documentation/config.md))
+* `MULTISITE_GLOBAL_PROJECTS`: Optional. Comma separated list of patterns (see [projects.pattern](https://github.com/GerritForge/multi-site/blob/master/src/main/resources/Documentation/config.md))
 to specify which projects are available across all sites. This parametes applies to both multi-site
 and replication service remote destinations.
 Empty by default which means that all projects are available across all sites.
