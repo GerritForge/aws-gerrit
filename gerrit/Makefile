@@ -2,6 +2,7 @@ include ../$(RECIPE)/setup.env
 include ../Makefile.common
 
 PLUGINS=javamelody healthcheck metrics-reporter-cloudwatch
+GERRIT_IMAGE_PLATFORM ?= linux/amd64
 
 docker-registry-login:
 	$(AWS) ecr get-login-password \
@@ -51,6 +52,7 @@ gerrit-build: check-gerrit-version-vs-war-url
 		export build_args=""; \
 	fi; \
 	docker build $${build_args} \
+		--platform $(GERRIT_IMAGE_PLATFORM) \
 		--build-arg withXRay="$(XRAY_ENABLED)" \
 		--build-arg GERRIT_VERSION=$(GERRIT_VERSION) \
 		--build-arg GERRIT_PATCH=$(GERRIT_PATCH) \
